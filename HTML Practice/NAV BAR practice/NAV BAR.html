@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar CSS</title>
+</head>
+
+<style>
+
+nav{
+   height: 50px;
+   color: white;
+   line-height: 30px;
+   background-color:blueviolet;
+
+}
+nav li{
+    list-style: none;
+    padding: 10px;
+
+}
+ 
+nav>ul>li{
+    float: left;
+}
+
+
+  
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: burlywood;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+
+nav>ul>li:hover>ul{
+    display: block;
+
+
+}
+ nav li:hover{
+    background-color: chocolate;
+ }
+
+  nav a{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+
+ }
+   
+
+
+
+
+</style>
+
+<body>
+
+
+<nav>
+
+    <ul>
+
+        <li> <a href="#"> HOME </a></li>
+        <li> <a href="#"> ABOUT US</a> </li>
+        <li> <a href="#"> PROJECTS </a>
+        <ul class="dropdown">
+            <li> HTML PROJECT</li>
+            <li> CSS PROJECT</li>
+            <li> BOOTSTRAP PROJECT</li>
+            <li> JAVASCRIPT PROJECT</li>
+            <li> REACT PROJECT</li>
+        </ul>
+
+        </li>
+
+        <li > <a href="#"> CONTACT US  </a</li>
+
+    </ul>
+</nav>
+
+</body>
+</html>
